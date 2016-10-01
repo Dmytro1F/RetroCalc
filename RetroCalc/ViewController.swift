@@ -40,7 +40,7 @@ class ViewController: UIViewController {
             try btnSound = AVAudioPlayer(contentsOf: soundURL)
             btnSound.prepareToPlay()
             
-        } catch let err as Error { //This needed in case if there is a possibility that the audio file that we need is missing
+        } catch let err as Error { // This needed in case if there is a possibility that the audio file that we need is missing
             
             print("Error!")
             
