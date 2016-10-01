@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RetroCalc/ViewController.swift"
+            timestampString = "497029146.33194"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RetroCalc/ViewController.swift"
+            timestampString = "497029146.33194"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RetroCalc.ViewController.btnSound.getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.AVAudioPlayer&gt;"
+                  moduleName = "RetroCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmytrofedorov/Desktop/XcodeProjects/RetroCalc/RetroCalc/ViewController.swift"
+                  timestampString = "497028925.553246"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RetroCalc.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; RetroCalc.ViewController"
+                  moduleName = "RetroCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmytrofedorov/Desktop/XcodeProjects/RetroCalc/RetroCalc/ViewController.swift"
+                  timestampString = "497028925.558658"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RetroCalc.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;RetroCalc.ViewController&gt;"
+                  moduleName = "RetroCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmytrofedorov/Desktop/XcodeProjects/RetroCalc/RetroCalc/ViewController.swift"
+                  timestampString = "497028925.560023"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

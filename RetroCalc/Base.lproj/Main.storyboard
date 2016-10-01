@@ -51,6 +51,9 @@
                                                     <constraint firstAttribute="height" constant="58" id="SQz-Nr-TY7"/>
                                                 </constraints>
                                                 <state key="normal" image="7"/>
+                                                <connections>
+                                                    <action selector="numberPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gyi-rZ-fgd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auu-Hp-VwE">
                                                 <constraints>
@@ -58,6 +61,9 @@
                                                     <constraint firstAttribute="height" constant="58" id="pv9-HL-SYz"/>
                                                 </constraints>
                                                 <state key="normal" image="8"/>
+                                                <connections>
+                                                    <action selector="numberPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dl8-pl-P1f"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkA-AO-KJy">
                                                 <constraints>
@@ -65,6 +71,9 @@
                                                     <constraint firstAttribute="width" constant="56" id="dLH-kl-zLk"/>
                                                 </constraints>
                                                 <state key="normal" image="9"/>
+                                                <connections>
+                                                    <action selector="numberPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7JH-gJ-CIe"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
