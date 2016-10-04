@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         
         playSound()
         
-        runningNumber += "\(sender.tag)" //making btn tags work as a magick
+        runningNumber += "\(sender.tag)" //making btn tags work as a magic
         outputLbl.text = runningNumber
     }
     
@@ -50,6 +50,15 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func onClearPressed (sender: AnyObject) {
+        
+        playSound()
+        
+        processOperation(operation: .Clear)
+        
+        processOperation(operation: currentOperation)
+        
+        }
     
     func playSound() { // Function to play Sound
         
@@ -75,6 +84,7 @@ class ViewController: UIViewController {
         case Subtract = "-"
         case Add = "+"
         case Empty = "Empty"
+        case Clear = "Clear"
     }
     
     
@@ -98,6 +108,8 @@ class ViewController: UIViewController {
                     result = "\(Double(leftValStr)! - Double(rightValStr)!)"
                 } else if currentOperation == Operation.Add{
                     result = "\(Double(leftValStr)! + Double(rightValStr)!)"
+                } else if currentOperation == Operation.Clear { //TODO: Think!
+                    
                 }
                 
                 leftValStr = result
@@ -131,12 +143,11 @@ class ViewController: UIViewController {
             try btnSound = AVAudioPlayer(contentsOf: soundURL)
             btnSound.prepareToPlay()
             
-        } catch let err as Error { // This needed in case if there is a possibility that the audio file that we need is missing
+        } catch let error as Error { // This needed in case if there is a possibility that the audio file that we need is missing
             
             print("Error!")
             
         }
-        
         
         
  
