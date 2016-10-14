@@ -52,11 +52,7 @@ class ViewController: UIViewController {
     
     @IBAction func onClearPressed (sender: AnyObject) {
         
-        playSound()
-        
         processOperation(operation: .Clear)
-        
-        processOperation(operation: currentOperation)
         
         }
     
@@ -103,13 +99,24 @@ class ViewController: UIViewController {
                     result = "\(Double(leftValStr)! * Double(rightValStr)!)"
                     
                 } else if currentOperation == Operation.Divide{
-                    result = "\(Double(leftValStr)! / Double(rightValStr)!)"
-                } else if currentOperation == Operation.Subtract{
-                    result = "\(Double(leftValStr)! - Double(rightValStr)!)"
-                } else if currentOperation == Operation.Add{
-                    result = "\(Double(leftValStr)! + Double(rightValStr)!)"
-                } else if currentOperation == Operation.Clear { //TODO: Think!
                     
+                    result = "\(Double(leftValStr)! / Double(rightValStr)!)"
+                    
+                } else if currentOperation == Operation.Subtract{
+                    
+                    result = "\(Double(leftValStr)! - Double(rightValStr)!)"
+                    
+                } else if currentOperation == Operation.Add{
+                    
+                    result = "\(Double(leftValStr)! + Double(rightValStr)!)"
+                    
+                } else if currentOperation == Operation.Clear { //TODO: Think!
+                    runningNumber.removeAll()
+                    leftValStr.removeAll()
+                    rightValStr.removeAll()
+                    result = "0"
+                    
+    
                 }
                 
                 leftValStr = result
