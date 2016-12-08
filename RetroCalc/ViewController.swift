@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func onClearPressed (sender: AnyObject) {
+    @IBAction func onClearPressed (sender: UIButton) {
         
         processOperation(operation: .Clear)
         
@@ -74,7 +74,7 @@ class ViewController: UIViewController {
     var currentOperation = Operation.Empty
     
     
-    enum Operation: String { //TODO: Need to understand
+    enum Operation: String {
         case Divide = "/"
         case Multiply = "*"
         case Subtract = "-"
@@ -94,30 +94,19 @@ class ViewController: UIViewController {
                 rightValStr = runningNumber
                 runningNumber = ""
                 
-                if currentOperation == Operation.Multiply{
-                    
-                    result = "\(Double(leftValStr)! * Double(rightValStr)!)"
-                    
-                } else if currentOperation == Operation.Divide{
-                    
-                    result = "\(Double(leftValStr)! / Double(rightValStr)!)"
-                    
-                } else if currentOperation == Operation.Subtract{
-                    
-                    result = "\(Double(leftValStr)! - Double(rightValStr)!)"
-                    
-                } else if currentOperation == Operation.Add{
-                    
-                    result = "\(Double(leftValStr)! + Double(rightValStr)!)"
-                    
-                } else if currentOperation == Operation.Clear { //TODO: Think!
-                    runningNumber.removeAll()
+                switch operation {
+                case .Add: result = "\(Double(leftValStr)! + Double(rightValStr)!)"
+                case .Divide:   result = "\(Double(leftValStr)! / Double(rightValStr)!)"
+                case .Multiply: result = "\(Double(leftValStr)! * Double(rightValStr)!)"
+                case .Subtract:  result = "\(Double(leftValStr)! - Double(rightValStr)!)"
+                case .Empty:
                     leftValStr.removeAll()
                     rightValStr.removeAll()
                     result = "0"
-                    
-    
+                default :
+                    result = "?"
                 }
+              
                 
                 leftValStr = result
                 outputLbl.text = result
@@ -146,18 +135,6 @@ class ViewController: UIViewController {
         let path = Bundle.main.path(forResource: "btn", ofType: "wav") //Finding the path of our audio file
         let soundURL = URL(fileURLWithPath: path!) // Declaring that path (URL)
         
-        do { //Making cross check
-            try btnSound = AVAudioPlayer(contentsOf: soundURL)
-            btnSound.prepareToPlay()
-            
-        } catch let error as Error { // This needed in case if there is a possibility that the audio file that we need is missing
-            
-            print("Error!")
-            
-        }
-        
-        
- 
 
     }
 }
